@@ -9,27 +9,27 @@ class Heroe {
     life
     rank
     experience
-    constructor (HeroeName,HeroePosition,HeroeLife,HeroeRank,HeroeExperience){
-        this.name = HeroeName;
-        this.position = HeroePosition
-        this.life = HeroeLife;
-        this.rank = HeroeRank;
-        this.experience = HeroeExperience;
+    constructor (name='Hereo'){
+        this.name = name,
+        this.position = '00',
+        this.life = 100 ,
+        this.rank = 5,
+        this.experience = 0
     }
 }
-let avatar = new Heroe('Heroe','00',100,5,0);
+let avatar = new Heroe(name='IronMan');
 console.log(avatar);
 
 //opción 2:
-const createHeroe = (name, position,life,rank,experience) =>{
+const createHeroe = (name='Hereo') =>{
     const heroe = {
         name,
-        position,
-        life,
-        rank,
-        experience
+        position:'00',
+        life:100,
+        rank:5,
+        experience:0
     }
     return heroe;
 }
-const heroe1 = createHeroe( 'Heroe','00',100,5,0);
+const heroe1 = createHeroe( name='BlackWindow');
 console.log(heroe1);
